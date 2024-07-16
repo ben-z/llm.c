@@ -22,7 +22,7 @@ TRAIN_BASE_URL="https://huggingface.co/datasets/karpathy/fineweb-edu-100B-gpt2-t
 VAL_URL="https://huggingface.co/datasets/karpathy/fineweb-edu-100B-gpt2-token-shards/resolve/main/edu_fineweb_val_000000.bin"
 
 # Directory to save files
-SAVE_DIR="edu_fineweb100B"
+SAVE_DIR="/mnt/wato-drive2/ben-shared/gpt2-llm.c/data/edu_fineweb100B"
 
 # Create the directory if it doesn't exist
 mkdir -p "$SAVE_DIR"

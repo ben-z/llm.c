@@ -7,9 +7,9 @@ SCRIPT_DIR=$(dirname "$(realpath "$0")")
 BASE_URL="https://huggingface.co/datasets/karpathy/llmc-starter-pack/resolve/main/"
 
 # Directory paths based on script location
-SAVE_DIR_PARENT="$SCRIPT_DIR/.."
-SAVE_DIR_TINY="$SCRIPT_DIR/data/tinyshakespeare"
-SAVE_DIR_HELLA="$SCRIPT_DIR/data/hellaswag"
+SAVE_DIR_PARENT="/mnt/wato-drive2/ben-shared/gpt2-llm.c/"
+SAVE_DIR_TINY="$SAVE_DIR_PARENT/data/tinyshakespeare"
+SAVE_DIR_HELLA="$SAVE_DIR_PARENT/data/hellaswag"
 
 # Create the directories if they don't exist
 mkdir -p "$SAVE_DIR_TINY"

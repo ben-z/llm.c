@@ -106,9 +106,9 @@ endif
 # Refer to the README for cuDNN install instructions
 ifeq ($(USE_CUDNN), 1)
   ifeq ($(SHELL_UNAME), Linux)
-    ifeq ($(shell [ -d $(HOME)/cudnn-frontend/include ] && echo "exists"), exists)
+    ifeq ($(shell [ -d $(HOME)/Projects/cudnn-frontend/include ] && echo "exists"), exists)
       $(info ✓ cuDNN found, will run with flash-attention)
-      CUDNN_FRONTEND_PATH ?= $(HOME)/cudnn-frontend/include
+      CUDNN_FRONTEND_PATH ?= $(HOME)/Projects/cudnn-frontend/include
     else ifeq ($(shell [ -d cudnn-frontend/include ] && echo "exists"), exists)
       $(info ✓ cuDNN found, will run with flash-attention)
       CUDNN_FRONTEND_PATH ?= cudnn-frontend/include

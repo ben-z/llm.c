@@ -400,3 +400,5 @@ LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libnvidia-ml.so mpirun -np 4 --oversubscrib
 # > sbatch --nodelist trpro-slurm2 ./slurm_2_gpu.sh
 # sbatch: INFO: You are submitting to the 'compute_dense' partition. This is a special partition for jobs that use all reserved resources effectively. Please ensure that your job satisfies this requirement. You can test your job using the default 'compute' partition before submitting to 'compute_dense'.
 # Submitted batch job 6292
+# Note: our MFU is much higher (74% vs 50% in Karpathy's post). Perhaps it's because our GPU doesn't have too many FLOPS in the first place?
+# EDIT: yep, looks like it. We get around 80% MFU on the 3090 2-GPU training.

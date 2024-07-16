@@ -396,3 +396,7 @@ LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libnvidia-ml.so mpirun -np 4 --oversubscrib
 	-y 1 \
 	-e "d48"
 
+# MARK: 2-GPU training (2x RTX 4090)
+# > sbatch --nodelist trpro-slurm2 ./slurm_2_gpu.sh
+# sbatch: INFO: You are submitting to the 'compute_dense' partition. This is a special partition for jobs that use all reserved resources effectively. Please ensure that your job satisfies this requirement. You can test your job using the default 'compute' partition before submitting to 'compute_dense'.
+# Submitted batch job 6292
